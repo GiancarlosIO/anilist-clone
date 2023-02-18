@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media screen(xl) {
+  .container {
+    @apply max-w-6xl;
+  }
+}
