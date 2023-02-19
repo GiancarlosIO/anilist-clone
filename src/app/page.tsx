@@ -2,10 +2,14 @@
 
 // const inter = Inter({ subsets: ['latin'] })
 
+import { HomepageHero } from './components/Homepage';
+
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-3xl font-bold underline">Hello, Next.js!</h1>
-    </main>
+    <div>
+      <div className="mt-12">
+        <HomepageHero />
+      </div>
+    </div>
   );
 }

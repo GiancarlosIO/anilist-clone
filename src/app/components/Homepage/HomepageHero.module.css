@@ -1,0 +1,10 @@
+.items-container {
+  gap: 70px 60px;
+  grid-template-columns: repeat(2, minmax(300px, 400px));
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 80px auto;
+  gap: 40px;
+}
