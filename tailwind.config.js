@@ -5,6 +5,37 @@ module.exports = {
     container: {
       center: true,
     },
+    spacing: {
+      // Added 0px for development purposes
+      0: '0',
+      0.4: '0.4rem',
+      0.8: '0.8rem',
+      1: '1rem',
+      1.2: '1.2rem',
+      1.6: '1.6rem',
+      2: '2rem',
+      2.4: '2.4rem',
+      3.2: '3.2rem',
+      3.6: '3.6rem',
+      4: '4rem',
+      4.4: '4.4rem',
+      4.8: '4.8rem',
+      5.6: '5.6rem',
+      6.4: '6.4rem',
+      7.2: '7.2rem',
+      8: '8rem',
+      8.8: '8.5rem',
+      9.6: '9.6rem',
+      10.4: '10.4rem',
+      11.2: '11.2rem',
+      12: '12rem',
+      14.4: '14.4rem',
+      16: '16rem',
+      20: '20rem',
+      21.2: '21.2rem',
+      24: '24rem',
+      28: '28rem',
+    },
     extend: {
       fontSize: {
         // With logic of 62.5% => 10px = 1rem
