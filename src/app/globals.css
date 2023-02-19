@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 10px;
+  }
+}
+
 @media screen(xl) {
   .container {
     @apply max-w-6xl;
