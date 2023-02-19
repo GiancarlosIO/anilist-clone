@@ -37,6 +37,21 @@ module.exports = {
       24: '24rem',
       28: '28rem',
     },
+    borderRadius: {
+      none: '0',
+      0: '0',
+      0.4: '0.4rem',
+      0.6: '0.6rem',
+      0.8: '0.8rem',
+      1: '1rem',
+      DEFAULT: '1rem',
+      1.2: '1.2rem',
+      1.6: '1.6rem',
+      2: '2rem',
+      2.4: '2.4rem',
+      3.2: '3.2rem',
+      full: '9999px',
+    },
     extend: {
       fontSize: {
         // With logic of 62.5% => 10px = 1rem
@@ -47,6 +62,7 @@ module.exports = {
         2: '2rem',
         2.4: '2.4rem',
         3.2: '3.2rem',
+        3.6: '3.6rem',
         4: '4rem',
         5.2: '5.2rem',
         5.6: '5.6rem',

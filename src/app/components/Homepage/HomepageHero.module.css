@@ -7,4 +7,17 @@
   display: grid;
   grid-template-columns: 80px auto;
   gap: 40px;
+  align-items: center;
+}
+
+.button {
+  height: 49px;
+  display: grid;
+  grid-template-columns: auto 38px;
+  align-items: center;
+  padding: 0 7px 0 20px !important;
+  box-shadow: 0 2px 40px rgb(0 0 0 / 40%)
+}
+.button:hover {
+  box-shadow: 0 2px 43px rgb(8 150 230 / 60%);
 }

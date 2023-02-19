@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import clsx from 'clsx';
+import { IoIosArrowDroprightCircle } from 'react-icons/io';
 
 import styles from './HomepageHero.module.css';
+
+import { PrimaryButton } from '@/shared/ui';
 
 type THomepageHeroProps = {};
 
@@ -59,7 +62,7 @@ const items: TItem[] = [
 
 export const HomepageHero: React.FC<THomepageHeroProps> = () => {
   return (
-    <div className="container rounded-3xl py-6 px-8 bg-slate-800">
+    <main className="container rounded-2 py-6 px-8 bg-slate-900">
       <h1 className="text-white font-bold text-3.2 text-center mb-2">
         <span className="hidden">Anilist: </span>
         The next-generation anime platform
@@ -87,7 +90,20 @@ export const HomepageHero: React.FC<THomepageHeroProps> = () => {
           </div>
         ))}
       </div>
-    </div>
+      <div className="flex justify-center mb-[-78px]">
+        <PrimaryButton
+          href="/signup/"
+          className={clsx(
+            styles.button,
+            'w-20 transition-shadow duration-300 ease-linear'
+          )}
+          rounded
+        >
+          <span className="text-1.8 text-center">Join Now</span>
+          <IoIosArrowDroprightCircle className="text-4" />
+        </PrimaryButton>
+      </div>
+    </main>
   );
 };
 
