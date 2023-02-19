@@ -11,13 +11,14 @@ type TAnchorProps = { href: string } & Omit<
   'href'
 >;
 
-export const PrimaryButton: React.FC<TAnchorProps | TButtonProps> = ({
-  children,
-  ...rest
-}) => {
+export const PrimaryButton: React.FC<
+  (TAnchorProps | TButtonProps) & { rounded?: boolean }
+> = ({ children, rounded, ...rest }) => {
   const buttonClass = clsx(
-    'bg-sky-600 shadow-[0 0 0 rgb(8 150 230 / 60%)] py-1 px-1.6 text-gray-300 font-bold rounded-md text-1.4'
+    'bg-sky-600 shadow-[0 0 0 rgb(8 150 230 / 60%)] py-1 px-1.6 text-gray-300 font-bold text-1.4',
+    rounded ? 'rounded-3.2' : 'rounded-0.6'
   );
+
   if ('href' in rest) {
     return (
       <a {...rest} className={clsx(buttonClass, rest.className)}>
